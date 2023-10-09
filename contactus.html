@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .contact {
+            #border: 1px solid black;
+            width: 50%;
+            background-color: #abdbe3;
+        }
+        .contactform{
+            display:flex;
+           justify-content:center;
+           align-items:center;
+           flex-direction:column;
+           margin:auto;
+            width:500px;
+            height:500px;
+        }
+        .input {
+            
+            width: 100%;
+            padding: 8px 12px 3px 12px;
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 20px;
+            outline: none;
+        }
+        .formelecon{
+            margin:5px;
+            padding:5px;
+        }
+        .imgcontainer {
+            width: 1000px;
+           # border: 1px solid black;
+
+        }
+        .btn {
+          
+            background-color: #F9F7F4;
+            padding: 10px;
+            width: 150px;
+            color: #495047;
+            text-align: center;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get in touch with us</h1>
+    <section class="container">
+        <div class="imgcontainer">
+            <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=626&ext=jpg"
+                 style="object-fit:cover; " />
+        </div>
+        <div class="contact">
+            
+            <form action="#" method="post" class="contactform">
+                <h2 style="text-align:center">Contact us!</h2>
+                <div class="formelecon">
+                    <input type="text" name="name" class="input" id="name" placeholder="Name" required />
+                </div>
+                <div class="formelecon">
+                    <input class="input" type="text" name="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="formelecon">
+                    <input type="number" class="input" name="phone" id="phone" placeholder="Phone" required />
+                </div>
+                <div class="formelecon ">
+                    <button type="button" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

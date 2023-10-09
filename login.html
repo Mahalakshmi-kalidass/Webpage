@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="LoginStyleSheet.css" />
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<header>
+		<div class="nav-container">
+			<img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/003/069/433/small/triangle-line-geometric-shape-logo-sign-free-vector.jpg" style="width:30px; height:30px; float:left;" />
+
+			<ul class="nav-bar">
+				<li class="nav-ele"><a href="webpage.html">About</a></li>
+				<li class="nav-ele"><a href="login.html">Sign in</a></li>
+				<li class="nav-ele"><a href="signupform.html">Sign up</a></li>
+				<li class="nav-ele"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+   
+	<section class="container">
+		<script src="Scriptlogin.js"></script>
+		<h2 class="formHead">Sign in</h2>
+		<form action="webpage.html" method="post" name="loginform" class="form">
+
+			<div class="formele">
+				<!--<label for="username" class="formlabel"> Email Address</label>-->
+				<span class="error" id="emailerror">
+					
+				</span>
+				<input class="txtinp" type="text" name="username" id="username" placeholder="Email Address" required inputmode="email" />
+			</div>
+			<div class="formele">
+				<!--<label for="password" class="formlabel"> Password</label>-->
+				<span class="error" id="passError">
+					
+				</span>
+				<input type="password" name="password" class="txtinp" id="password" required placeholder="Password" />
+			</div>
+			<div class="formele options">
+				<input type="checkbox" name="remember"  id="remember" />
+				<span> Remember me</span>
+				<a href="#">  Forgot password?</a>
+			</div>
+
+			<div class="formele">
+				<button type="submit" id="submit">Submit</button>
+
+			</div>
+			<div class="formele">
+				Not a member? <a href="signupform.html" id="signupLink">Sign up</a>
+			</div>
+
+		</form>
+	</section>
+	<footer style="text-align:center;">
+		<p>This site was built as part of Training &#169 Phase 1 project 2023</p>
+	</footer>
+</body>
+</html>

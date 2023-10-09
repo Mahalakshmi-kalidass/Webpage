@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteluxe</title>
+    <link rel="stylesheet" href="WebpageStyleSheet.css" />
+    <script src="webpageScript.js"></script>
+    <script>
+        let count = 1;
+        function changeRight() {
+            const previous = document.getElementById("img" + count);
+            previous.style.zIndex = 0;
+            count++;
+            if (count > 5) {
+                count = 1;
+            }
+            const next = document.getElementById("img" + count);
+            next.style.zIndex = 1;
+        }
+        function changeLeft() {
+            const previous = document.getElementById("img" + count);
+            previous.style.zIndex = 0;
+            count--;
+            if (count < 1) {
+                count = 5;
+            }
+            const next = document.getElementById("img" + count);
+            next.style.zIndex = 1;
+
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/003/069/433/small/triangle-line-geometric-shape-logo-sign-free-vector.jpg" style="width:30px; height:30px; float:left;" />
+
+            <ul class="nav-bar">
+                <li class="nav-ele"><a href="webpage.html">About</a></li>
+                <li class="nav-ele"><a href="login.html">Sign in</a></li>
+                <li class="nav-ele"><a href="signupform.html">Sign up</a></li>
+                <li class="nav-ele"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="containerimg">
+        <div class="wrapper">
+            <button type="button" class="nbtn" id="navbtn1" onclick="changeLeft()">  < </button>
+            <img class="image" id="img1" src="https://images.squarespace-cdn.com/content/v1/55843d54e4b07d871de5d2bf/1539797387688-009LKF5HSIHGL38649D4/interior+design+banner.jpg?format=2500w"
+                 alt="hall" />
+            <img class="image" src="https://res.cloudinary.com/dwa6fuv2x/w_2000,h_1200,c_fit/auto-mapping-folder/2020/07/Luxury-interior-design.jpg"
+                 alt="interior2" id="img2" />
+            <img class="image" src="https://blog.woodenstreet.com/images/data/image_upload/16613262061635576802modular-kitchen-designs-by-woodenstreet-banner%20(1).png"
+                 alt="interior3" id="img3" />
+            <img class="image" src="https://assets.architecturaldigest.in/photos/60084dd6cce5700439e12bf7/16:9/w_2560%2Cc_limit/modern-living-room-decor-1366x768.jpg"
+                 alt="interior4" id="img4" />
+            <img class="image" src="https://st.hzcdn.com/simgs/pictures/landscapes/very-private-backyard-enclave-morgan-howarth-photography-img~02a1e52a0f109e76_14-2826-1-e312a54.jpg"
+                 alt="interior5" id="img5" />
+            <button class="nbtn" type="button" id="navbtn2" onclick="changeRight()"> > </button>
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>About us</h1>
+        <section class="about">
+            <div class="abtimg">
+                <img src="D:\Mahal\Phase 1 project\Here-we-have-the-tips-solutions.jpg" style="object-fit:contain" />
+            </div>
+            <div class="abtcontent">
+                <p class="abtp" style="text-align:justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button type="button" id="abtbtn"><a href="#">Read More</a> </button>
+            </div>
+        </section>
+    </div>
+
+
+    <h1>Get in touch with us</h1>
+    <section class="container" id="contactinfo">
+        <div class="imgcontainer">
+            <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=626&ext=jpg"
+                 style="object-fit:cover; " />
+        </div>
+        <div class="contact">
+
+            <form action="#" method="post" class="contactform">
+                <h2 style="text-align:center">Contact us!</h2>
+                <div class="formelecon">
+                    <span class="error" id="emptyErrorName">
+                        *A value is Required
+                    </span>
+                    <input type="text" name="name" class="input" id="name" placeholder="Name" required />
+                </div>
+                <div class="formelecon">
+                    <span class="error" id="emptyErrorEmail">
+                        *A value is Required
+                    </span>
+                    <input class="input" type="text" name="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="formelecon">
+                    <span class="error" id="emptyErrorPhone">
+                        *A value is Required
+                    </span>
+                    <input type="number" class="input" name="phone" id="phone" placeholder="Phone" required />
+                </div>
+                <div class="formelecon">
+
+                    <textarea class="input message" id="msg" rows="5" cols="50" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="formelecon">
+                    <button type="button" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <p>This site was built as part of Training &#169 Phase 1 project 2023</p>
+    </footer>
+
+</body>
+</html>
